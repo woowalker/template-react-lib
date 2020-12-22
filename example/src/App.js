@@ -1,10 +1,17 @@
 import React from 'react'
+import { Layout } from 'template-react-lib'
 
-import { ExampleComponent } from 'template-react-lib'
-import 'template-react-lib/dist/index.css'
-
+const { LayoutMain, LayoutHeader, LayoutBody, LayoutSider, LayoutContent } = Layout
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <LayoutMain>
+      <LayoutHeader></LayoutHeader>
+      <LayoutBody>
+        <LayoutSider></LayoutSider>
+        <LayoutContent></LayoutContent>
+      </LayoutBody>
+    </LayoutMain>
+  )
 }
 
 export default App
