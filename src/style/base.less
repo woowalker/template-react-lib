@@ -1,0 +1,20 @@
+/* 作用：重置html标签样式 */
+
+html,
+body,
+#root {
+  font-family: "Microsoft YaHei", helvetica, arial, sans-serif;
+  width      : 100%;
+  height     : 100%;
+}
+
+input,
+input:focus {
+  outline: 0;
+}
+
+/* 重置ul和ol样式，iview在2.10之后把这个重置给删除了，咋们项目要加上*/
+ul,
+ol {
+  list-style: none
+}

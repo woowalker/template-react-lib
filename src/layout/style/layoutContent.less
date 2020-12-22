@@ -1,0 +1,10 @@
+@import '../../style/func.less';
+@import './variables.less';
+
+@layout-content-prefix: ~'@{opt-prefix}layout-content';
+
+.@{layout-content-prefix} {
+  height     : 100%;
+  margin-left: @layout-sider-width;
+  transition : margin-left 0.2s ease-in-out;
+}

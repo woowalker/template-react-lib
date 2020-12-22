@@ -1,6 +1,5 @@
-import React from 'react'
-import styles from './styles.module.css'
+// 样式
+import './style'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+// 组件
+export { default as Layout } from './layout'
